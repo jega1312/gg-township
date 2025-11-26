@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Gamuda Gardens, Sungai Buloh North | A Serene Township with Modern Living
+      & Nature
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="/international-telephone-input.js"></script>
+    <script type="module">
+      import {
+        Application,
+        Controller,
+      } from 'https://unpkg.com/@hotwired/stimulus/dist/stimulus.js';
+      window.Stimulus = Application.start();
+
+      Stimulus.register(
+        'tabs',
+        class extends Controller {
+          static targets = ['tab', 'panel'];
+          static values = { index: Number };
+
+          initialize() {
+            this.showTab();
+          }
+
+          change(event) {
+            event.preventDefault();
+            this.indexValue = this.tabTargets.indexOf(event.currentTarget);
+            this.showTab();
+          }
+
+          showTab() {
+            const slider = document.getElementById('tabSlider');
+            if (slider) {
+              slider.style.transform = `translateX(${this.indexValue * 100}%)`;
+            }
+
+            this.panelTargets.forEach((el, index) => {
+              index == this.indexValue
+                ? el.classList.remove('hidden')
+                : el.classList.add('hidden');
+            });
+            this.tabTargets.forEach((el, index) => {
+              if (index == this.indexValue) {
+                el.classList.add('text-white');
+                el.classList.remove('text-black');
+              } else {
+                el.classList.add('text-black');
+                el.classList.remove('text-white');
+              }
+            });
+          }
+        }
+      );
+
+      const homeBtn = document.getElementById('homeBtn');
+      const commercialBtn = document.getElementById('commercialBtn');
+      const homeTabs = document.getElementById('homeTabs');
+      const commercialTabs = document.getElementById('commercialTabs');
+
+      const buttons = [homeBtn, commercialBtn];
+      const tabs = [homeTabs, commercialTabs];
+
+      tabs.forEach((tab) => {
+        tab.classList.toggle('hidden', tab !== activeTab);
+      });
+
+      homeBtn.addEventListener('click', () => activateTab(homeBtn, homeTabs));
+      commercialBtn.addEventListener('click', () =>
+        activateTab(commercialBtn, commercialBtn)
+      );
+    </script>
+  </body>
+</html>
