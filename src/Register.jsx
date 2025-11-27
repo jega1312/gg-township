@@ -146,7 +146,7 @@ useEffect(() => {
 
                 <button
                   type="submit"
-                  className="open-sans mt-7 md:mt-12 lg:mt-12 rounded-full border-2 bg-[#42B58B] px-[48px] py-[12px] text-center text-[16px] text-white uppercase transition duration-300 ease-in-out hover:border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px]"
+                  className="open-sans mt-7 md:mt-12 lg:mt-12 rounded-full border-2 bg-[#42B58B] px-[48px] py-[12px] text-center text-[16px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px] hover:cursor-pointer"
                 >
                   SUBMIT
                 </button>

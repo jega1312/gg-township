@@ -29,7 +29,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button class="animate-custom-pulse fixed right-2 bottom-9 z-50 flex cursor-pointer items-center justify-center rounded-2xl bg-white p-2 text-left tracking-wider font-serif text-[15px] leading-4.5 text-[#0A6B10] shadow-sm shadow-white transition duration-300 md:p-2.5">
+          <button class="animate-custom-pulse fixed right-2 bottom-9 z-50 flex cursor-pointer items-center justify-center rounded-2xl bg-white p-2 text-left tracking-wider font-serif text-[15px] leading-4.5 text-[#0A6B10] shadow-sm shadow-white transition duration-300">
             Chat <br class="sm:hidden" />
             Now!
             <div class="3xl:h-10 3xl:w-10 relative ml-2 flex h-8 w-8 items-center justify-center">

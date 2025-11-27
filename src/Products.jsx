@@ -207,7 +207,7 @@ function Products() {
               {!showMore && (
                 <button
                   onClick={() => setShowMore(true)}
-                  className="hk-nova mx-auto mt-10 flex flex-col items-center justify-center gap-2 text-[16px] text-[#42B58B] uppercase"
+                  className="hk-nova mx-auto mt-12 flex flex-col items-center justify-center gap-1 text-[16px] text-[#42B58B] uppercase hover:animate-bounce hover:cursor-pointer"
                 >
                   Load More{' '}
                   <svg

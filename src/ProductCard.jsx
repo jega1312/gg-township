@@ -43,7 +43,7 @@ function ProductCard(props) {
       <div className="p-3">
         <a
           href="#register"
-          className="hk-nova 3xl:w-[58%] mx-auto flex w-[70%] items-center justify-center rounded-full border-2 bg-[#42B58B] px-[20px] py-[12px] text-center text-[14px] text-white uppercase transition duration-300 ease-in-out hover:border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:w-[65%] md:w-[55%] lg:w-[60%] xl:w-[60%] xl:text-[18px]"
+          className="hk-nova 3xl:w-[58%] mx-auto flex w-[70%] items-center justify-center rounded-full border bg-[#42B58B] px-[20px] py-[12px] text-center text-[14px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:w-[65%] md:w-[55%] lg:w-[60%] xl:w-[60%] xl:text-[18px]"
         >
           {props.buttonText}
         </a>
