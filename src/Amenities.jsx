@@ -59,17 +59,17 @@ export default function Accordion() {
     <>
       <div className="mx-auto w-[80%] md:w-[65%] lg:hidden" data-aos="fade-right">
         {accordionData.map((section) => (
-          <div key={section.id} className="my-3 rounded-xl p-1 bg-white">
+          <div key={section.id} className="group my-3 rounded-xl p-1 bg-white">
             <button
               className="flex w-full items-center justify-center p-4"
               onClick={() => toggle(section.id)}
             >
-              <span className="hk-nova flex w-full gap-4 text-[14px] text-[#42b58b] uppercase">
+              <span className="hk-nova flex w-full gap-4 text-[14px] text-[#42b58b] uppercase group-hover:text-black">
                 <img src={section.icon} alt={section.title} hidden />
                 {section.title}
               </span>
 
-              <span className="hk-nova text-[14px] text-[#42b58b]">
+              <span className="hk-nova text-[14px] text-[#42b58b] group-hover:text-black">
                 {open === section.id ? '+' : '+'}
               </span>
             </button>

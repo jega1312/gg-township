@@ -42,7 +42,7 @@ function App() {
               <img
                 src="./src/assets/images/whatsapp.svg"
                 alt="whatsapp icon"
-                class="3xl:h-6 3xl:w-6 absolute top-1.5 left-1.5 z-10 h-5 w-5"
+                class="3xl:h-6 3xl:w-6 absolute top-1.5 left-2 z-10 h-5 w-5"
               />
             </div>
           </button>

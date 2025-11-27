@@ -68,7 +68,7 @@ function Features() {
                 className="w-[70px]"
               />
               <div className="sofia-pro mt-7 text-center text-[16px] text-white xl:text-[20px]">
-                Integrated With Alfresco Commercial <br /> Hub
+                Integrated With Alfresco Commercial Hub
               </div>
             </div>
           </div>
