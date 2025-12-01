@@ -72,7 +72,7 @@ function Navbar() {
           <div className="flex items-center justify-center gap-x-2">
             <a
               href="#register"
-              className="sofia-pro w-[90%] text-nowrap rounded-full border-2 bg-[#42B58B] px-[20px] py-[8px] text-center text-[18px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px] lg:w-full lg:py-[14px] xl:px-[26px] 2xl:w-full 2xl:px-[26px] 3xl:text-[22px]"
+              className="sofia-pro w-[90%] text-nowrap rounded-full border-2 bg-[#42B58B] px-5 py-2 text-center text-[18px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px] lg:w-full lg:py-3.5 xl:px-[26px] 2xl:w-full 2xl:px-[26px] 3xl:text-[22px]"
             >
               Register Now
             </a>

@@ -39,7 +39,7 @@ function Features() {
             >
               <img
                 src="./src/assets/images/feature/feature2.png"
-                className="w-[80px]"
+                className="w-20"
               />
               <div className="sofia-pro mt-7 text-center text-[16px] text-white xl:text-[20px]">
                 Exclusive <br /> Resident <br /> Clubhouse
