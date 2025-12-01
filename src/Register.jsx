@@ -70,9 +70,9 @@ function Register() {
     <>
       <section id="register" className="relative mx-auto min-h-[60vh] w-full">
         {/* Horizontal Line */}
-        <div className="relative top-[41px] right-0 left-0 h-[1px] bg-[#42B58B]"></div>
+        <div className="relative top-[41px] right-0 left-0 h-px bg-[#42B58B]"></div>
         {/* Vertical Line */}
-        <div className="relative top-0 left-1/2 h-[80px] w-[1px] -translate-x-1/2 bg-[#42B58B]"></div>
+        <div className="relative top-0 left-1/2 h-20 w-px -translate-x-1/2 bg-[#42B58B]"></div>
 
         <div className="3xl:py-28 py-14 md:py-20 lg:py-24">
           {/* Heading Text */}
@@ -196,7 +196,7 @@ function Register() {
 
                 <button
                   type="submit"
-                  className="open-sans mt-7 rounded-full border-2 border-[#42B58B] bg-[#42B58B] px-[48px] py-[12px] text-center text-[16px] text-white uppercase transition duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-[#42B58B] sm:text-[18px] md:mt-12 lg:mt-12"
+                  className="open-sans mt-7 rounded-full border-2 border-[#42B58B] bg-[#42B58B] px-12 py-3 text-center text-[16px] text-white uppercase transition duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-[#42B58B] sm:text-[18px] md:mt-12 lg:mt-12"
                 >
                   SUBMIT
                 </button>

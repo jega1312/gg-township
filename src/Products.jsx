@@ -143,10 +143,10 @@ function Products() {
     <>
       <section id="products" className="relative mx-auto min-h-[60vh] w-full">
         {/* Horizontal Line */}
-        <div className="relative top-[41px] right-0 left-0 h-[1px] bg-[#42B58B]"></div>
+        <div className="relative top-[41px] right-0 left-0 h-px bg-[#42B58B]"></div>
 
         {/* Vertical Line */}
-        <div className="relative top-0 left-1/2 h-[80px] w-[1px] -translate-x-1/2 bg-[#42B58B]"></div>
+        <div className="relative top-0 left-1/2 h-20 w-px -translate-x-1/2 bg-[#42B58B]"></div>
 
         <div className="pt-10 pb-20 3xl:pt-16 3xl:pb-36">
           {/* Heading Text */}
