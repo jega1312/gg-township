@@ -8,9 +8,52 @@ import Register from './Register';
 import Location from './Location';
 import Footer from './Footer';
 import './assets/css/App.css';
-import '/src/assets/css/international-telephone-input.css';
+import './assets/css/international-telephone-input.css';
+// import { useEffect, useState } from 'react';
 
 function App() {
+  // const [isOverlayActive, setIsOverlayActive] = useState(false);
+
+  // useEffect(() => {
+  //   const countryList = document.querySelector('.country-list');
+  //   const overlay = document.querySelector('.iti-overlay');
+    
+  //   if (countryList) {
+  //     countryList.classList.remove('active');
+  //     countryList.style.display = 'none';
+  //     countryList.style.setProperty('z-index', '999999', 'important');
+  //   }
+  //   if (overlay) {
+  //     overlay.classList.remove('active');
+  //   }
+
+  //   const checkDropdown = () => {
+  //     const countryList = document.querySelector('.country-list');
+  //     if (countryList) {
+  //       const currentZIndex = window.getComputedStyle(countryList).zIndex;
+  //       if (currentZIndex !== '999999') {
+  //         countryList.style.setProperty('z-index', '999999', 'important');
+  //       }
+        
+  //       const isVisible = window.getComputedStyle(countryList).display !== 'none';
+  //       setIsOverlayActive(isVisible);
+  //     }
+  //   };
+
+  //   const interval = setInterval(checkDropdown, 100);
+
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  // const handleOverlayClick = () => {
+  //   const countryList = document.querySelector('.country-list');
+  //   if (countryList) {
+  //     countryList.style.display = 'none';
+  //     countryList.classList.remove('active');
+  //   }
+  //   setIsOverlayActive(false);
+  // };
+
   return (
     <>
       <div className="w-full">
@@ -23,31 +66,37 @@ function App() {
         <Register />
         <Location />
         <Footer />
-
-        <a
-          href="https://api.whatsapp.com/send/?phone=601151143487&text=+Hi%2C+I+am+interested+in+Gamuda+Gardens+Township+and+would+like+to+know+more+about+the+project.+Thank+you&type=phone_number&app_absent=0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button class="animate-custom-pulse fixed right-2 bottom-9 z-50 flex cursor-pointer items-center justify-center rounded-2xl bg-white p-2 text-left tracking-wider font-serif text-[15px] leading-4.5 text-[#0A6B10] shadow-sm shadow-white transition duration-300">
-            Chat <br class="sm:hidden" />
-            Now!
-            <div class="3xl:h-10 3xl:w-10 relative ml-2 flex h-8 w-8 items-center justify-center">
-              <img
-                src="./src/assets/images/green-chat-bubble.png"
-                alt="green bubble"
-                class="3xl:h-10 3xl:w-10 absolute top-0 left-0 h-9 w-9"
-              />
-
-              <img
-                src="./src/assets/images/whatsapp.svg"
-                alt="whatsapp icon"
-                class="3xl:h-6 3xl:w-6 absolute top-1.5 left-2 z-10 h-5 w-5"
-              />
-            </div>
-          </button>
-        </a>
       </div>
+      
+      {/* 1. Overlay (z-index: 9998) */}
+      {/* {isOverlayActive && (
+        <div
+          className="fixed inset-0 bg-black/60"
+          onClick={handleOverlayClick}
+          style={{ zIndex: 9998 }}
+        />
+      )} */}
+
+      {/* 3. WhatsApp Button (z-index: 10001) - AFTER everything */}
+      <a
+        href="https://api.whatsapp.com/send/?phone=601151143487&text=+Hi%2C+I+am+interested+in+Gamuda+Gardens+Township+and+would+like+to+know+more+about+the+project.+Thank+you&type=phone_number&app_absent=0"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed right-2 bottom-9 z-1000000"
+      >
+        <button className="animate-custom-pulse flex cursor-pointer items-center justify-center rounded-2xl bg-white py-0.5 px-1.5 text-left font-serif text-[15px] leading-4.5 tracking-wider text-[#0A6B10] shadow-lg shadow-gray transition duration-300">
+          Chat <br className="sm:hidden" />
+          Now!
+          <div className="sticky-icon 3xl:h-10 3xl:w-10 relative ml-2 flex h-8 w-8 items-center justify-center">
+
+            <img
+              src="./src/assets/images/whatsapp.svg"
+              alt="whatsapp icon"
+              className="h-7 w-7 absolute top-1.5  left-1.5 3xl:left-1.5 z-10"
+            />
+          </div>
+        </button>
+      </a>
     </>
   );
 }

@@ -14,7 +14,7 @@ function Hero() {
             <div className="nelphim text-center text-[25px] text-[#6b9075] lg:text-[30px] xl:text-[30px]">
               Gated & Guarded
             </div>
-            <div className="nelphim w-[75%] text-center text-[45px] leading-[1.5em] text-[#42b58b] lg:text-[60px] xl:text-[80px] 2xl:text-[80px]">
+            <div className="nelphim w-[82.7%] text-center text-[45px] leading-[1.5em] text-[#42b58b] lg:text-[60px] xl:text-[80px] 2xl:text-[80px]">
               Garden Homes
             </div>
           </div>

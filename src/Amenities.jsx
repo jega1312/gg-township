@@ -13,6 +13,7 @@ export default function Accordion() {
       id: 'connectivity',
       icon: './src/assets/images/lrt.png',
       title: 'Connectivity',
+      iconWidth: 'lg:w-[20px]',
       items: [
         { label: 'KTM Komuter Kuang', dist: '3km' },
         {
@@ -26,6 +27,7 @@ export default function Accordion() {
       id: 'amenities',
       icon: './src/assets/images/mall.png',
       title: 'Amenities',
+      iconWidth: 'lg:w-[30px]',
       items: [
         { label: 'AEON Mall Rawang', dist: '8.5km' },
         { label: 'KPJ Rawang Specialist Hospital', dist: '10.5km' },
@@ -37,6 +39,7 @@ export default function Accordion() {
       id: 'education',
       icon: './src/assets/images/school.png',
       title: 'Education',
+      iconWidth: 'lg:w-[30px]',
       items: [
         { label: 'Eduwis Pre School', dist: '50m' },
         { label: 'Brainy Bunch Pre School', dist: '200m' },
@@ -100,6 +103,7 @@ export default function Accordion() {
             title={section.title}
             icon={section.icon}
             items={section.items}
+             iconWidth={section.iconWidth} 
             delayClass={delayClass[index] || ""}
           />
         ))}

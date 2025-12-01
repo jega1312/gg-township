@@ -15,8 +15,8 @@ function Connectivity() {
         {/* Vertical Line */}
         <div className="relative top-0 left-1/2 h-[80px] w-[1px] -translate-x-1/2 bg-[#42B58B]"></div>
 
-        <div className="relative z-0 mx-auto w-full max-w-[470px] bg-[url('./src/assets/images/curve-mobile.png')] bg-cover bg-top bg-no-repeat lg:max-w-[780px] 3xl:max-w-[750px] lg:bg-[url('./src/assets/images/curve-desktop.png')]">
-          <div className="z-10 mx-auto flex w-full flex-col items-center px-6 py-20 pb-10">
+        <div className="relative z-0 mx-auto w-full max-w-[470px] bg-[url('./src/assets/images/curve-mobile.png')] bg-cover bg-top bg-no-repeat lg:max-w-[700px] xl:max-w-[740px] ">
+          <div className="z-10 mx-auto flex w-full flex-col items-center px-6 md:px-0 py-20 pb-0 lg:pb-2 2xl:pb-1">
             <div
               ref={sectionRef}
               className={`text-center ${visible ? 'animate__animated animate__fadeInUp animate__slow custom-fade-up' : 'opacity-0'}`}
@@ -36,7 +36,7 @@ function Connectivity() {
               <Lottie
                 animationData={connectivityMapAnimation}
                 loop={false}
-                className="h-auto w-[296px] sm:w-[340px] md:w-[347px] lg:w-[460px]"
+                className="h-auto w-[320px] sm:w-[340px] md:w-[405px] lg:w-[500px]"
               />
             </div>
           </div>

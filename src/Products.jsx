@@ -22,12 +22,12 @@ const products = [
       <>
         <strong>Freehold Terrace Homes</strong> with
         <strong> Individual Titles</strong>, just a <strong>5-min walk</strong>{' '}
-        from the commercial hub.
+        from commercial hub.
       </>
     ),
     price: (
       <>
-        RM <br className="sm:hidden" /> 7XX,XXX
+        RM 7XX,XXX
       </>
     ),
     monthly: <>RM 2,XXX</>,
@@ -48,7 +48,7 @@ const products = [
     ),
     price: (
       <>
-        RM <br className="sm:hidden" /> 1,3XX,XXX
+        RM 1,3XX,XXX
       </>
     ),
     monthly: <>RM 4,XXX</>,
@@ -62,14 +62,14 @@ const products = [
     houseType: '8-Cluster Park Homes',
     description: (
       <>
-        <strong>New topology</strong> of homes with
+        A <strong>new topology</strong> of homes with
         <strong> Private Garden up to 24ft</strong> and a
         <strong> 100ft Communal Garden</strong>
       </>
     ),
     price: (
       <>
-        RM <br className="sm:hidden" /> 9,XX,XXX
+        RM 9,XX,XXX
       </>
     ),
     monthly: <>RM 3,XXX</>,
@@ -83,14 +83,14 @@ const products = [
     houseType: 'Esteem Semi-D & Bungalow',
     description: (
       <>
-        <strong>Low-Density</strong> & <strong>Bungalows</strong> with
+        <strong>Low-Density Semi-D</strong> & <strong>Bungalows</strong> with
         unobstructed
         <strong> Park & Lake Views</strong>
       </>
     ),
     price: (
       <>
-        RM <br className="sm:hidden" /> 1,9XX,XXX
+        RM 1,9XX,XXX
       </>
     ),
     monthly: <>RM 7,XXX</>,
@@ -126,7 +126,7 @@ const products = [
     ),
     price: (
       <>
-        RM <br className="sm:hidden" /> 250,000
+        RM 250,000
       </>
     ),
     monthly: <>RM 1,XXX</>,
@@ -148,11 +148,11 @@ function Products() {
         {/* Vertical Line */}
         <div className="relative top-0 left-1/2 h-[80px] w-[1px] -translate-x-1/2 bg-[#42B58B]"></div>
 
-        <div className="pt-10 pb-20">
+        <div className="pt-10 pb-20 3xl:pt-16 3xl:pb-36">
           {/* Heading Text */}
           <div
             ref={sectionRef}
-            className={`nelphim text-center text-[25px] text-[#42B58B] uppercase sm:text-[30px] xl:text-[35px] 3xl:text-[40px] ${visible ? 'animate__animated animate__fadeInUp animate__slow custom-fade-up' : 'opacity-0'} `}
+            className={`nelphim text-center text-[25px] text-[#42B58B] uppercase sm:text-[30px] xl:text-[40px] ${visible ? 'animate__animated animate__fadeInUp animate__slow custom-fade-up' : 'opacity-0'} `}
           >
             Products
           </div>
@@ -160,10 +160,10 @@ function Products() {
           <div
             data-controller="tabs"
             data-tabs-index-value="0"
-            className="mx-6 mt-6"
+            className="mx-6"
           >
             {/* TAB BUTTONS */}
-            <div className="relative mx-auto mt-6 inline-flex w-full justify-center">
+            <div className="relative my-10 3xl:mb-14 flex justify-center items-center">
               <div className="relative flex rounded-full bg-[#e5e7eb] p-1">
                 {/* SLIDER BACKGROUND */}
                 <div
@@ -175,7 +175,7 @@ function Products() {
                 <button
                   data-tabs-target="tab"
                   data-action="tabs#change"
-                  className="3xl:py-3.5 3xl:px-10 sofia-pro relative z-10 cursor-pointer rounded-full px-[40px] py-[10px] text-center text-[12px] transition-all duration-300 sm:text-[18px]"
+                  className="3xl:py-3 3xl:px-12 sofia-pro relative z-0 flex-1 cursor-pointer rounded-full px-[30px] py-3 text-center text-[12px] transition-all duration-300 sm:text-[18px]"
                 >
                   OUR HOMES
                 </button>
@@ -184,7 +184,7 @@ function Products() {
                 <button
                   data-tabs-target="tab"
                   data-action="tabs#change"
-                  className="3xl:py-3.5 3xl:px-10 sofia-pro relative z-10 cursor-pointer rounded-full px-[24px] py-[10px] text-center text-[12px] transition-all duration-300 sm:text-[18px]"
+                  className="3xl:py-3 3xl:px-10 sofia-pro relative z-0 flex-1 cursor-pointer rounded-full px-[25px] py-3 text-center text-[12px] transition-all duration-300 sm:text-[18px]"
                 >
                   COMMERCIAL
                 </button>
@@ -192,8 +192,8 @@ function Products() {
             </div>
 
             {/* PANEL 1 — Homes */}
-            <div data-tabs-target="panel" className="mx-auto px-1 py-2">
-              <div className="mx-auto mt-4 md:mt-10 grid h-full w-full grid-cols-1 place-items-stretch items-center justify-center gap-7 md:gap-4 sm:grid-cols-2 md:w-[90%] lg:w-[85%] lg:gap-x-4 xl:grid-cols-3 xl:w-[82%] 2xl:w-[82%] 3xl:w-[83%] xl:gap-x-7 xl:gap-y-7">
+            <div data-tabs-target="panel" className="mx-auto">
+              <div className="mx-auto mt-4 md:mt-10 grid h-full w-full grid-cols-1 place-items-stretch items-center justify-center gap-7 md:gap-4 sm:grid-cols-2 md:w-[90%] lg:w-[85%] lg:gap-x-4 xl:grid-cols-3 xl:w-[82%] 2xl:w-[83%] 3xl:w-[83%] xl:gap-x-7 xl:gap-y-7">
                 {visibleHomes.map((item, index) => (
                   <div
                     key={index}
@@ -207,7 +207,7 @@ function Products() {
               {!showMore && (
                 <button
                   onClick={() => setShowMore(true)}
-                  className="hk-nova mx-auto mt-12 flex flex-col items-center justify-center gap-1 text-[16px] text-[#42B58B] uppercase hover:animate-bounce hover:cursor-pointer"
+                  className="hk-nova mx-auto mt-12 flex flex-col items-center justify-center text-[16px] text-[#42B58B] uppercase hover:animate-bounce hover:cursor-pointer"
                 >
                   Load More{' '}
                   <svg
@@ -229,8 +229,8 @@ function Products() {
             </div>
 
             {/* PANEL 2 — Commercial */}
-            <div data-tabs-target="panel" className="mx-auto hidden px-1 py-2">
-              <div className="mx-auto mt-4 md:mt-10 grid h-full w-full grid-cols-1 place-items-stretch items-center justify-center gap-7 md:gap-4 sm:grid-cols-2 md:w-[90%] lg:w-[85%] lg:gap-x-4 xl:grid-cols-3 xl:w-[82%] 2xl:w-[82%] 3xl:w-[83%] xl:gap-x-7 xl:gap-y-7">
+            <div data-tabs-target="panel" className="mx-auto hidden">
+              <div className="mx-auto mt-4 md:mt-10 grid h-full w-full grid-cols-1 place-items-stretch items-center justify-center gap-7 md:gap-4 sm:grid-cols-2 md:w-[90%] lg:w-[85%] lg:gap-x-4 xl:grid-cols-3 xl:w-[82%] 2xl:w-[83%] 3xl:w-[83%] xl:gap-x-7 xl:gap-y-7">
                 <ProductCard
                   image={atriumImg}
                   title="Atrium"
@@ -238,8 +238,8 @@ function Products() {
                   houseType="Milan-Inspired Commercial Retail"
                   description={
                     <>
-                      Commercial Retail inspired by Milan, Italy. Conveniently
-                      located near leisure attractions.
+                      Commercial Retail with inspiration of Milan, Italy. Conveniently
+                      located to leisure attractions.
                     </>
                   }
                   price={<>TBC</>}
@@ -254,13 +254,13 @@ function Products() {
                   houseType="2-Storey Retail Shops"
                   description={
                     <>
-                      First commercial lots with individual titles, placed
-                      strategically between residences.
+                      First commercial lots with individual title, strategic placed
+                      between residences.
                     </>
                   }
                   price={
                     <>
-                      <>RM</> <br className="sm:hidden" /> 1,7XX,XXX
+                      <>RM 1,7XX,XXX</>
                     </>
                   }
                   monthly={<>RM 7,XXX</>}
@@ -271,7 +271,7 @@ function Products() {
                   image={gardensImg}
                   title="Gardens Square"
                   houseIcon={houseIcon}
-                  houseType="8-Cluster Park Homes"
+                  houseType="Commercial Retail & Shop Offices"
                   description={
                     <>
                       Parisan-Inspired Commercial hub that is a vehicle free
@@ -280,13 +280,22 @@ function Products() {
                   }
                   price={
                     <>
-                      <>RM</> <br className="sm:hidden" /> 5XX,XXX
+                      <>RM 5XX,XXX</>
                     </>
                   }
                   monthly={<>RM 2,XXX</>}
                   buttonText="Register Now"
                 />
               </div>
+
+              {!showMore && (
+                <button
+                  onClick={() => setShowMore(true)}
+                  className="hk-nova mx-auto mt-12 flex flex-col items-center justify-center text-[16px] text-[#42B58B] uppercase hover:animate-bounce hover:cursor-pointer"
+                >
+                  
+                </button>
+              )}
             </div>
           </div>
         </div>

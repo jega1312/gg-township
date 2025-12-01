@@ -27,12 +27,12 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed z-50 flex w-full items-center justify-between gap-x-2 bg-white p-3.5 shadow-lg lg:px-16 xl:px-18 2xl:px-20 2xl:py-3 3xl:px-28 3xl:py-2.5">
+      <nav className="fixed z-20 flex w-full items-center justify-between gap-x-2 bg-white p-3.5 shadow-lg lg:px-16 xl:px-18 2xl:px-20 2xl:py-3 3xl:px-28 3xl:py-2.5">
         <a href="#hero">
           <img
             src="../src/assets/images/logo.png"
             alt="Logo"
-            className="h-auto w-[90px] sm:w-[120px] md:w-[90px] lg:w-[100px] 3xl:w-[140px]"
+            className="h-auto w-[100px] sm:w-[120px] md:w-[90px] lg:w-[100px] 3xl:w-[140px]"
           />
         </a>
 
@@ -72,7 +72,7 @@ function Navbar() {
           <div className="flex items-center justify-center gap-x-2">
             <a
               href="#register"
-              className="sofia-pro w-[90%] rounded-full border-2 bg-[#42B58B] px-[20px] py-[10px] text-center text-[15px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px] lg:w-full lg:py-[14px] xl:px-[26px] 2xl:w-full 2xl:px-[26px] 3xl:text-[22px]"
+              className="sofia-pro w-[90%] text-nowrap rounded-full border-2 bg-[#42B58B] px-[20px] py-[8px] text-center text-[18px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px] lg:w-full lg:py-[14px] xl:px-[26px] 2xl:w-full 2xl:px-[26px] 3xl:text-[22px]"
             >
               Register Now
             </a>
@@ -102,7 +102,7 @@ function Navbar() {
 
       {open && (
         <div
-          className={`fixed top-18 left-0 z-30 flex h-full w-full flex-col gap-y-3 overflow-hidden bg-white px-12 md:px-[70px] lg:hidden ${menuAnim}`}
+          className={`fixed top-18 left-0 z-20 flex h-full w-full flex-col gap-y-3 overflow-hidden bg-white px-12 md:px-[70px] lg:hidden ${menuAnim}`}
         >
           <a
             href="#connectivity"

@@ -1,21 +1,70 @@
 import useReveal from './useReveal';
-import { useEffect, useRef } from "react";
-
-
+import { useEffect, useRef } from 'react';
 
 function Register() {
   const [sectionRef, visible] = useReveal();
   const phoneRef = useRef(null);
-const initializedRef = useRef(false);
+  const labelRef = useRef(null);
+  const initializedRef = useRef(false);
 
+  useEffect(() => {
+    if (
+      !initializedRef.current &&
+      window.intlTelInputInit &&
+      phoneRef.current
+    ) {
+      window.intlTelInputInit([phoneRef.current]);
+      initializedRef.current = true;
+    }
 
-useEffect(() => {
-  if (!initializedRef.current && window.intlTelInputInit && phoneRef.current) {
-    window.intlTelInputInit([phoneRef.current]);
-    initializedRef.current = true; 
-  }
-}, []);
+    // Add label update logic here
+    const phoneInput = phoneRef.current;
+    const phoneLabel = labelRef.current;
 
+    if (!phoneInput || !phoneLabel) return;
+
+    function updateLabel() {
+      const value = phoneInput.value.trim();
+      // Only move label if there's more than just the country code
+      const hasActualInput = value.length > 3 && value !== '+60';
+
+      if (hasActualInput) {
+        phoneLabel.classList.add(
+          '!top-0',
+          '!left-3',
+          '!text-black',
+          '!text-[12px]',
+          '!-translate-y-1/2'
+        );
+        phoneLabel.classList.remove('top-1/2', 'left-14');
+      } else {
+        phoneLabel.classList.remove(
+          '!top-0',
+          '!left-3',
+          '!text-black',
+          '!text-[12px]'
+        );
+        phoneLabel.classList.add('top-1/2', 'left-14', 'text-[16px]');
+      }
+    }
+
+    // Check on input change
+    phoneInput.addEventListener('input', updateLabel);
+    phoneInput.addEventListener('focus', updateLabel);
+    phoneInput.addEventListener('blur', updateLabel);
+
+    // Initial check and delayed checks for plugin injection
+    updateLabel();
+    setTimeout(updateLabel, 100);
+    setTimeout(updateLabel, 500);
+
+    // Cleanup
+    return () => {
+      phoneInput.removeEventListener('input', updateLabel);
+      phoneInput.removeEventListener('focus', updateLabel);
+      phoneInput.removeEventListener('blur', updateLabel);
+    };
+  }, []);
 
   return (
     <>
@@ -25,7 +74,7 @@ useEffect(() => {
         {/* Vertical Line */}
         <div className="relative top-0 left-1/2 h-[80px] w-[1px] -translate-x-1/2 bg-[#42B58B]"></div>
 
-        <div className="py-10 md:py-20 lg:py-24 3xl:py-28">
+        <div className="3xl:py-28 py-14 md:py-20 lg:py-24">
           {/* Heading Text */}
           <div
             ref={sectionRef}
@@ -40,7 +89,7 @@ useEffect(() => {
             and Get A Private Tour
           </div>
 
-          <div className="mx-auto mt-8 w-[85%] sm:mt-14 md:w-[70%] xl:w-[50%] 3xl:w-[51%]">
+          <div className="3xl:w-[51%] mx-auto mt-8 w-[85%] sm:mt-14 md:w-[70%] xl:w-[50%]">
             <form action="#">
               <div
                 ref={sectionRef}
@@ -67,20 +116,20 @@ useEffect(() => {
                     id="email"
                     type="email"
                     className="peer h-[60px] w-full rounded-lg border-2 border-[#00000066] bg-transparent p-3 pt-5 text-black focus:border-[#6B9075] focus:ring-0 focus:outline-none"
-                    placeholder=""
+                    placeholder=" "
                     required
                   />
 
                   <label
                     htmlFor="email"
-                    className="hk-nova absolute top-1/2 left-3 -translate-y-1/2 px-1 text-[16px] text-[#6B7280] transition-all duration-200 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-valid:top-[-7px] peer-valid:translate-y-0 peer-valid:bg-white peer-valid:text-[12px] peer-valid:text-black peer-focus:top-[-7px] peer-focus:translate-y-0 peer-focus:bg-white peer-focus:text-[12px] peer-focus:text-black"
+                    className="hk-nova absolute top-1/2 left-3 -translate-y-1/2 px-1 text-[16px] text-[#6B7280] transition-all duration-200 peer-not-placeholder-shown:top-[-7px] peer-not-placeholder-shown:translate-y-0 peer-not-placeholder-shown:bg-white peer-not-placeholder-shown:text-[12px] peer-not-placeholder-shown:text-black peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-focus:top-[-7px] peer-focus:translate-y-0 peer-focus:bg-white peer-focus:text-[12px] peer-focus:text-black"
                   >
                     Email
                   </label>
                 </div>
                 <div className="relative mt-3 mb-3 w-full">
                   <input
-                  ref={phoneRef}
+                    ref={phoneRef}
                     type="tel"
                     id="phone"
                     name="phone"
@@ -89,6 +138,7 @@ useEffect(() => {
                   />
 
                   <label
+                    ref={labelRef}
                     htmlFor="phone"
                     className="hk-nova absolute top-1/2 left-14 -translate-y-1/2 bg-white px-1 text-[12px] text-[#6B7280] transition-all duration-200 ease-in-out peer-valid:text-[16px] peer-focus:top-0 peer-focus:left-3 peer-focus:text-[12px] peer-focus:text-black"
                   >
@@ -146,7 +196,7 @@ useEffect(() => {
 
                 <button
                   type="submit"
-                  className="open-sans mt-7 md:mt-12 lg:mt-12 rounded-full border-2 bg-[#42B58B] px-[48px] py-[12px] text-center text-[16px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:text-[18px] hover:cursor-pointer"
+                  className="open-sans mt-7 rounded-full border-2 border-[#42B58B] bg-[#42B58B] px-[48px] py-[12px] text-center text-[16px] text-white uppercase transition duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-[#42B58B] sm:text-[18px] md:mt-12 lg:mt-12"
                 >
                   SUBMIT
                 </button>

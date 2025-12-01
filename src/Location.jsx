@@ -1,7 +1,6 @@
 import Accordion from "./Amenities";
 import useReveal from "./useReveal";
 
-
 function Location() {
   const [refTitle1, visTitle1] = useReveal();
 const [refTitle2, visTitle2] = useReveal();
@@ -40,7 +39,7 @@ const [refDesktopMap, visDesktopMap] = useReveal();
         alt="Location Map Mobile"
         ref={refMobileMap}
         className={`
-          mx-auto mb-14 md:mb-14 h-auto w-[75%] md:w-[55%] lg:hidden
+          mx-auto mb-14 md:mb-14 h-auto w-[80%] md:w-[55%] lg:hidden
           ${visMobileMap ? "animate__animated animate__fadeInUp animate__slow custom-fade-up" : "opacity-0"}
         `}
       />

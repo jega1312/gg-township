@@ -78,7 +78,7 @@ function GallerySlider() {
   }, [isMobile]);
 
   return (
-    <div className="3xl:px-14 relative mx-auto mt-10 w-[85%] sm:w-full sm:px-4 md:mt-12 xl:px-8">
+    <div className="3xl:px-14 relative mx-auto mt-2 w-[85%] sm:w-full sm:px-4 md:mt-12 xl:px-8">
       <button className="custom-prev absolute top-[84%] left-2 z-20 -translate-y-1/2 hover:cursor-pointer">
         <img src={arrowLeft} alt="Previous" />
       </button>
@@ -146,7 +146,12 @@ function GallerySlider() {
             1800: {
               slidesPerView: 2.5, // Original size for extra large
               slidesOffsetBefore: -235,
-              slidesOffsetAfter: -235,
+              slidesOffsetAfter: -5,
+            },
+            1920: {
+              slidesPerView: 2.5, // Original size for extra large
+              slidesOffsetBefore: -233,
+              slidesOffsetAfter: -233,
             },
           }}
         >
@@ -158,22 +163,23 @@ function GallerySlider() {
                 alt="Gallery"
                 className="h-full w-full object-cover object-center sm:hidden"
               />
-              {/* DESKTOP IMAGE */}
-              <img
-                src={item.srcDesktop}
-                alt="Gallery"
-                className="hidden h-full w-full object-cover object-center sm:block hover:cursor-grab active:cursor-grabbing"
-              />
-              <div className="group absolute bottom-3 left-4 z-20 hidden w-full sm:block xl:bottom-4 xl:left-8">
-                <div className="nelphim text-[14px] text-white transition-all duration-300 ease-out group-hover:-translate-y-4 sm:text-[16px] xl:text-[25px]">
-                  {item.title}
-                </div>
-
-                <div
-                  className="sofia-pro-light absolute translate-y-6 text-[14px] text-white opacity-0 transition-all duration-300 ease-out group-hover:translate-y-1 group-hover:opacity-100 sm:text-[16px] xl:text-[18px]"
-                  style={{ left: '0', bottom: '0' }}
-                >
-                  {item.description}
+              <div className='group'>
+                {/* DESKTOP IMAGE */}
+                <img
+                  src={item.srcDesktop}
+                  alt="Gallery"
+                  className="hidden h-full w-full object-cover object-center sm:block hover:cursor-grab active:cursor-grabbing"
+                />
+                <div className="absolute bottom-4 left-4 z-20 hidden w-full sm:block xl:bottom-6 xl:left-8">
+                  <div className="nelphim text-[14px] text-white transition-all duration-300 ease-out group-hover:-translate-y-4 sm:text-[16px] xl:text-[25px]">
+                    {item.title}
+                  </div>
+                  <div
+                    className="sofia-pro-light absolute translate-y-8 text-[14px] text-white opacity-0 transition-all duration-300 ease-out group-hover:translate-y-3 group-hover:opacity-100 sm:text-[16px] xl:text-[18px]"
+                    style={{ left: '0', bottom: '0' }}
+                  >
+                    {item.description}
+                  </div>
                 </div>
               </div>
 

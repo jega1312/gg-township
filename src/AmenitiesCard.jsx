@@ -1,6 +1,6 @@
 import useReveal from './useReveal';
 
-export default function CardAccordion({ title, icon, items, delayClass }) {
+export default function CardAccordion({ title, icon, items, iconWidth, delayClass }) {
   const [sectionRef, visible] = useReveal();
   return (
     <div
@@ -9,7 +9,7 @@ export default function CardAccordion({ title, icon, items, delayClass }) {
     >
       <div className="hk-nova mb-4 flex justify-between border-b border-[#e5e7eb] pb-2 text-[16px] text-[#42B58B] uppercase">
         {title}
-        <img src={icon} alt={title} className="h-[25px] w-auto" />
+        <img src={icon} alt={title} className={`${iconWidth} h-auto`} />
       </div>
 
       <div className='mb-8 xl:mb-2 3xl:mb-0'>

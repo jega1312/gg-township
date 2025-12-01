@@ -7,6 +7,7 @@
   padding: 1px;
   right: auto;
   left: 0;
+  overflow: hidden;
 }
 
 .flag-container:hover {
@@ -41,6 +42,9 @@
   border-bottom: 6px solid gray;
 }
 
+
+
+
 .country-list {
   display: none;
   cursor: pointer;
@@ -74,14 +78,29 @@
   outline: 0;
 }
 
-.country-list .divider {
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid rgb(0 0 0 / 12%);
+/* .country-list {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 90% !important;
+  max-width: 300px !important;
+  background: white !important;
+  overflow-y: auto !important;
+  border-radius: 12px !important;
+  z-index: 100000 !important; 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+  font-family: 'Gotham Book', sans-serif !important;
+  font-size: 16px !important;
+  display: none !important;
 }
 
-.country.highlight {
-  background-color: rgb(228, 228, 228);
+.country {
+  padding: 12px;
+  font-size: 15px;
+} */
+
+.country .dial-code {
+  color: #999999;
 }
 
 .flag-box {
