@@ -401,14 +401,14 @@ html {
 
 @media (min-width: 425px) {
   .custom-prev {
-    top: 75%;
+    top: 78%;
     left: 1%;
     width: 40px;
     height: auto;
   }
 
   .custom-next {
-    top: 75%;
+    top: 78%;
     right: 1%;
     width: 40px;
     height: auto;
