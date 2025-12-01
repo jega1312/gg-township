@@ -146,7 +146,7 @@ function GallerySlider() {
             1800: {
               slidesPerView: 2.5, // Original size for extra large
               slidesOffsetBefore: -235,
-              slidesOffsetAfter: -5,
+              slidesOffsetAfter: -235,
             },
             1920: {
               slidesPerView: 2.5, // Original size for extra large
