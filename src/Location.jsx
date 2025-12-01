@@ -8,7 +8,7 @@ const [refMobileMap, visMobileMap] = useReveal();
 const [refDesktopMap, visDesktopMap] = useReveal();
   return (
     <>
-      <section id="location" className="relative bg-[#f8f8f0] pt-14 md:pt-14 lg:pt-16 3xl:pt-24">
+      <section id="location" className="relative bg-[#f8f8f0] pt-14 md:pt-16 lg:pt-16 3xl:pt-24">
 
       <div className="leading-[2.5em] md:leading-[3em] 3xl:leading-[4em]">
         {/* Title 1 */}
