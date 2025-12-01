@@ -32,7 +32,7 @@ function Navbar() {
           <img
             src="../src/assets/images/logo.png"
             alt="Logo"
-            className="h-auto w-[100px] sm:w-[120px] md:w-[90px] lg:w-[100px] 3xl:w-[140px]"
+            className="h-auto w-[120px] md:w-[90px] lg:w-[100px] 3xl:w-[140px]"
           />
         </a>
 

@@ -166,11 +166,12 @@ html {
   border-radius: 50% !important;
   cursor: pointer;
   display: inline-block !important;
-  opacity: 1 !important; /* Swiper adds opacity by default */
+  opacity: 0.5 !important; /* Swiper adds opacity by default */
 }
 
 .custom-bullet.swiper-pagination-bullet-active {
   background: #ffffff !important;
+   opacity: 1 !important;
 }
 
 .custom-prev {
@@ -364,14 +365,14 @@ html {
 
 @media (min-width: 320px) {
   .custom-prev {
-    top: 68%;
+    top: 73%;
     left: 1%;
     width: 40px;
     height: auto;
   }
 
   .custom-next {
-    top: 68%;
+    top: 73%;
     right: 1%;
     width: 40px;
     height: auto;

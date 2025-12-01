@@ -9,7 +9,7 @@ function Features() {
         className="relative mx-auto h-full w-full rounded-t-2xl bg-[url('src/assets/images/bg-green.png')] bg-cover bg-top bg-no-repeat sm:bg-[url('src/assets/images/bg-green-desktop.png')]"
       >
         {/* CONTENT */}
-        <div className="flex w-full flex-col items-center justify-center px-3.5 py-12 xl:py-24 3xl:py-28">
+        <div className="flex w-full flex-col items-center justify-center px-3.5 py-12 md:py-20 xl:py-24 3xl:py-28">
           {/* TITLE */}
           <div
             ref={sectionRef}

@@ -185,10 +185,10 @@ function GallerySlider() {
 
               {/* MOBILE TEXT (OUTSIDE IMAGE) */}
               <div className="mt-7 flex flex-col gap-y-4 sm:hidden">
-                <div className="nelphim mx-auto w-[90%] text-center text-[25px] text-white">
+                <div className="nelphim mx-auto w-[90%] text-center text-[25px] leading-[1.1em] text-white">
                   {item.title}
                 </div>
-                <div className="sofia-pro-light mx-auto w-[60%] text-center text-[16px] text-white">
+                <div className="sofia-pro-light mx-auto w-[60%] text-center text-[16px] leading-[1.2em] text-white">
                   {item.description}
                 </div>
               </div>
