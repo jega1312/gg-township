@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed z-20 flex w-full items-center justify-between gap-x-2 bg-white p-3.5 shadow-lg lg:px-16 xl:px-18 2xl:px-20 2xl:py-3 3xl:px-28 3xl:py-2.5">
+      <nav className="fixed z-30 flex w-full items-center justify-between gap-x-2 bg-white p-3.5 shadow-lg lg:px-16 xl:px-18 2xl:px-20 2xl:py-3 3xl:px-28 3xl:py-2.5">
         <a href="#hero">
           <img
             src="../src/assets/images/logo.png"
