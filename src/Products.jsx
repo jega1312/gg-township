@@ -163,7 +163,7 @@ function Products() {
             className="mx-6"
           >
             {/* TAB BUTTONS */}
-            <div className="relative mt-10 mb-10 3xl:mb-14 flex justify-center items-center">
+            <div className="relative mt-10 mb-14 flex justify-center items-center">
               <div className="relative flex rounded-full bg-[#e5e7eb] p-1">
                 {/* SLIDER BACKGROUND */}
                 <div
