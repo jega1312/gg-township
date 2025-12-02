@@ -4,7 +4,7 @@ function Footer() {
       <footer className="flex w-full items-center justify-center bg-black py-14">
         <a href="#hero">
           <img
-            src="../src/assets/images/logo-white.png"
+            src="../assets/images/logo-white.png"
             alt="Footer Logo"
             className=""
           />

@@ -35,7 +35,7 @@ const [refDesktopMap, visDesktopMap] = useReveal();
 
       {/* Mobile Map */}
       <img
-        src="../src/assets/images/mobile-map.png"
+        src="../assets/images/mobile-map.png"
         alt="Location Map Mobile"
         ref={refMobileMap}
         className={`
@@ -46,7 +46,7 @@ const [refDesktopMap, visDesktopMap] = useReveal();
 
       {/* Desktop Map */}
       <img
-        src="../src/assets/images/desktop-map.png"
+        src="../assets/images/desktop-map.png"
         alt="Desktop Map"
         ref={refDesktopMap}
         className={`

@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import ProductCard from './ProductCard';
-import astorImg from '../src/assets/images/products/astor.png';
-import valeriaImg from '../src/assets/images/products/valeria.png';
-import cloveImg from '../src/assets/images/products/the-clove.png';
-import monarcImg from '../src/assets/images/products/monarc.png';
-import hestonImg from '../src/assets/images/products/heston.png';
-import gaiaImg from '../src/assets/images/products/gaia.png';
-import atriumImg from '../src/assets/images/products/atrium.png';
-import villageImg from '../src/assets/images/products/village-square.png';
-import gardensImg from '../src/assets/images/products/gardens-square.png';
-import houseIcon from '../src/assets/images/house.png';
+import astorImg from '../assets/images/products/astor.png';
+import valeriaImg from '../assets/images/products/valeria.png';
+import cloveImg from '../assets/images/products/the-clove.png';
+import monarcImg from '../assets/images/products/monarc.png';
+import hestonImg from '../assets/images/products/heston.png';
+import gaiaImg from '../assets/images/products/gaia.png';
+import atriumImg from '../assets/images/products/atrium.png';
+import villageImg from '../assets/images/products/village-square.png';
+import gardensImg from '../assets/images/products/gardens-square.png';
+import houseIcon from '../assets/images/house.png';
 import useReveal from './useReveal';
 
 const products = [

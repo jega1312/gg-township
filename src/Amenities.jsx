@@ -11,7 +11,7 @@ export default function Accordion() {
   const accordionData = [
     {
       id: 'connectivity',
-      icon: '../src/assets/images/lrt.png',
+      icon: '../assets/images/lrt.png',
       title: 'Connectivity',
       iconWidth: 'lg:w-[20px]',
       items: [
@@ -25,7 +25,7 @@ export default function Accordion() {
     },
     {
       id: 'amenities',
-      icon: '../src/assets/images/mall.png',
+      icon: '../assets/images/mall.png',
       title: 'Amenities',
       iconWidth: 'lg:w-[30px]',
       items: [
@@ -37,7 +37,7 @@ export default function Accordion() {
     },
     {
       id: 'education',
-      icon: '../src/assets/images/school.png',
+      icon: '../assets/images/school.png',
       title: 'Education',
       iconWidth: 'lg:w-[30px]',
       items: [

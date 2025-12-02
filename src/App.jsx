@@ -90,7 +90,7 @@ function App() {
           <div className="sticky-icon 3xl:h-10 3xl:w-10 relative ml-2 flex h-8 w-8 items-center justify-center">
 
             <img
-              src="./src/assets/images/whatsapp.svg"
+              src="../assets/images/whatsapp.svg"
               alt="whatsapp icon"
               className="h-7 w-7 absolute top-1.5  left-1.5 3xl:left-1.5 z-10"
             />
