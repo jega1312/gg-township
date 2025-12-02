@@ -1,7 +1,7 @@
 import useReveal from './useReveal';
 import petIcon from '../src/assets/images/feature/feature1.png';
 import residenceIcon from '../src/assets/images/feature/feature2.png';
-import schoolBadgeIcon from '../src/assets/images/feature/feature3.png';
+import schoolBadgeIcon from '../src/assets/images/feature/feature5.png';
 import hubIcon from '../src/assets/images/feature/feature4.png';
 
 function Features() {
