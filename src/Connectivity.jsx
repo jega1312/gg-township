@@ -1,5 +1,7 @@
 import Lottie from 'lottie-react';
 import connectivityMapAnimation from '../src/assets/animations/connectivity-map.json';
+import mobileBg from '../src/assets/images/bg-mobile.png';
+import mobileCurveBg from '../src/assets/images/curve-mobile.png';
 import useReveal from './useReveal';
 
 function Connectivity() {
@@ -8,14 +10,15 @@ function Connectivity() {
     <>
       <section
         id="connectivity"
-        className="z-20 w-full bg-[url('../src/assets/images/bg-mobile.png')] bg-cover bg-top bg-no-repeat"
+        className="z-20 w-full bg-cover bg-top bg-no-repeat"
+        style={{ backgroundImage: `url(${mobileBg})` }}
       >
         {/* Horizontal Line */}
         <div className="relative top-[41px] right-0 left-0 h-[1px] bg-[#42B58B]"></div>
         {/* Vertical Line */}
         <div className="relative top-0 left-1/2 h-[80px] w-[1px] -translate-x-1/2 bg-[#42B58B]"></div>
 
-        <div className="relative z-0 mx-auto w-full max-w-[470px] bg-[url('./src/assets/images/curve-mobile.png')] bg-cover bg-top bg-no-repeat lg:max-w-[700px] xl:max-w-[740px] ">
+        <div className="relative z-0 mx-auto w-full max-w-[470px] bg-cover bg-top bg-no-repeat lg:max-w-[700px] xl:max-w-[740px]"  style={{ backgroundImage: `url(${mobileCurveBg})` }}>
           <div className="z-10 mx-auto flex w-full flex-col items-center px-6 md:px-0 py-20 pb-0 lg:pb-2 2xl:pb-1">
             <div
               ref={sectionRef}

@@ -1,4 +1,7 @@
 import CardAccordion from './AmenitiesCard';
+import lrtIcon from '../src/assets/images/lrt.png';
+import mallIcon from '../src/assets/images/mall.png';
+import schoolIcon from '../src/assets/images/school.png';
 import { useState } from 'react';
 
 export default function Accordion() {
@@ -11,7 +14,7 @@ export default function Accordion() {
   const accordionData = [
     {
       id: 'connectivity',
-      icon: './src/assets/images/lrt.png',
+      icon: lrtIcon,
       title: 'Connectivity',
       iconWidth: 'lg:w-[20px]',
       items: [
@@ -25,7 +28,7 @@ export default function Accordion() {
     },
     {
       id: 'amenities',
-      icon: './src/assets/images/mall.png',
+      icon: mallIcon,
       title: 'Amenities',
       iconWidth: 'lg:w-[30px]',
       items: [
@@ -37,7 +40,7 @@ export default function Accordion() {
     },
     {
       id: 'education',
-      icon: './src/assets/images/school.png',
+      icon: schoolIcon,
       title: 'Education',
       iconWidth: 'lg:w-[30px]',
       items: [
