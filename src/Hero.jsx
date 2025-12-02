@@ -4,7 +4,7 @@ function Hero() {
   const [sectionRef, visible] = useReveal();
   return (
     <>
-      <section id='hero' className="h-screen bg-[url('../src/assets/images/hero-mobile.png')] bg-cover bg-center bg-no-repeat sm:rounded-b-2xl sm:bg-[url('../src/assets/images/hero-desktop.png')]">
+      <section id='hero' className="h-screen bg-[url('/img/hero-mobile.png')] bg-cover bg-center bg-no-repeat sm:rounded-b-2xl sm:bg-[url('/img/hero-desktop.png')]">
         {/* Hero Text */}
         <div className="absolute top-[17%] mx-auto flex w-full flex-col items-center justify-center md:top-[17%] lg:top-[18%] xl:top-[15%] 2xl:top-[19%] 3xl:top-[28%]">
           <div

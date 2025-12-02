@@ -7,7 +7,7 @@ function Gallery() {
     <>
       <section
         id="gallery"
-        className="z-0 h-auto w-full overflow-hidden bg-[url('./src/assets/images/bg-green.png')] bg-cover bg-top bg-no-repeat sm:bg-[url('./src/assets/images/bg-green-desktop.png')] sm:py-10 md:py-20 lg:py-28"
+        className="z-0 h-auto w-full overflow-hidden bg-[url('/img/bg-green.png')] bg-cover bg-top bg-no-repeat sm:bg-[url('/img/bg-green-desktop.png')] sm:py-10 md:py-20 lg:py-28"
       >
         <div
           ref={sectionRef}

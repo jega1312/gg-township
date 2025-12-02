@@ -55,7 +55,7 @@ const [refDesktopMap, visDesktopMap] = useReveal();
         `}
       />
 
-      <div className="z-0 h-auto w-full bg-[url('./src/assets/images/bg-green-desktop.png')] bg-cover bg-top bg-no-repeat py-10 lg:py-30 xl:py-44 2xl:py-44 3xl:py-56">
+      <div className="z-0 h-auto w-full bg-[url('/img/bg-green-desktop.png')] bg-cover bg-top bg-no-repeat py-10 lg:py-30 xl:py-44 2xl:py-44 3xl:py-56">
         <Accordion />
       </div>
     </section>
