@@ -5,21 +5,33 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+import gallery1Mobile from '../src/assets/images/gallery/gallery1.png';
+import gallery1Desktop from '../src/assets/images/gallery/gallery1-desktop.png';
+import gallery2Mobile from '../src/assets/images/gallery/gallery2.png';
+import gallery2Desktop from '../src/assets/images/gallery/gallery2-desktop.png';
+import gallery3Mobile from '../src/assets/images/gallery/gallery3.png';
+import gallery3Desktop from '../src/assets/images/gallery/gallery3-desktop.png';
+import gallery4Mobile from '../src/assets/images/gallery/gallery4.png';
+import gallery4Desktop from '../src/assets/images/gallery/gallery4-desktop.png';
+import gallery5Mobile from '../src/assets/images/gallery/gallery5.png';
+import gallery5Desktop from '../src/assets/images/gallery/gallery5-desktop.png';
+import gallery6Mobile from '../src/assets/images/gallery/gallery6.png';
+import gallery6Desktop from '../src/assets/images/gallery/gallery6-desktop.png';
 import arrowLeft from '../src/assets/images/gallery/left.png';
 import arrowRight from '../src/assets/images/gallery/right.png';
 
 const galleryItems = [
   {
     id: 1,
-    srcMobile: './src/assets/images/gallery/gallery1.png',
-    srcDesktop: './src/assets/images/gallery/gallery1-desktop.png',
+    srcMobile: {gallery1Mobile},
+    srcDesktop: {gallery1Desktop},
     title: 'Lakeside Living',
     description: <>Immerse yourself in homes surrounded by Parks and Lakes</>,
   },
   {
     id: 2,
-    srcMobile: './src/assets/images/gallery/gallery2.png',
-    srcDesktop: './src/assets/images/gallery/gallery2-desktop.png',
+    srcMobile: {gallery2Mobile},
+    srcDesktop: {gallery2Desktop},
     title: '100ft Communal Garden',
     description: (
       <>Create new memories with loved ones in our car-free communal garden</>
@@ -27,15 +39,15 @@ const galleryItems = [
   },
   {
     id: 3,
-    srcMobile: './src/assets/images/gallery/gallery3.png',
-    srcDesktop: './src/assets/images/gallery/gallery3-desktop.png',
+   srcMobile: {gallery3Mobile},
+    srcDesktop: {gallery3Desktop},
     title: 'Thematic Landscapes',
     description: <>Live within the beauty of nature, everyday</>,
   },
   {
     id: 4,
-    srcMobile: './src/assets/images/gallery/gallery4.png',
-    srcDesktop: './src/assets/images/gallery/gallery4-desktop.png',
+    srcMobile: {gallery4Mobile},
+    srcDesktop: {gallery4Desktop},
     title: 'Commercial lots at FunPark',
     description: (
       <>Refresh yourself with a cold beverage after a long day at the FunPark</>
@@ -43,15 +55,15 @@ const galleryItems = [
   },
   {
     id: 5,
-    srcMobile: './src/assets/images/gallery/gallery5.png',
-    srcDesktop: './src/assets/images/gallery/gallery5-desktop.png',
+    srcMobile: {gallery5Mobile},
+    srcDesktop: {gallery5Desktop},
     title: 'Cascading Waterfall',
     description: <>Sustainable, thriving & biodiverse township</>,
   },
   {
     id: 6,
-    srcMobile: './src/assets/images/gallery/gallery6.png',
-    srcDesktop: './src/assets/images/gallery/gallery6-desktop.png',
+    srcMobile: {gallery6Mobile},
+    srcDesktop: {gallery6Desktop},
     title: 'Dining Restaurants',
     description: <>Be spoilt with various choices for lunch and dinner</>,
   },

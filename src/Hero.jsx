@@ -1,4 +1,6 @@
 import useReveal from './useReveal';
+import heroLine from '../src/assets/images/hero-line.png';
+import highwayLogo from '../src/assets/images/highway.png';
 
 function Hero() {
   const [sectionRef, visible] = useReveal();
@@ -24,7 +26,7 @@ function Hero() {
             className={`mx-auto flex w-[30%] items-center justify-center md:w-[31%] lg:w-[32%] xl:w-[16%] 2xl:w-[16%] ${visible ? 'animate__animated animate__fadeInUp animate__delay-1s animate__slow custom-fade-up' : 'opacity-0'} `}
           >
             <img
-              src="./src/assets/images/hero-line.png"
+              src={heroLine}
               alt="Hero Line"
               className="h-auto w-full object-contain"
             />
@@ -34,7 +36,7 @@ function Hero() {
             className={`mx-auto mt-4 flex items-center justify-center gap-x-1.5 md:mt-4 ${visible ? 'animate__animated animate__fadeInUp animate__delay-1s animate__slow custom-fade-up' : 'opacity-0'} `}
           >
             <img
-              src="./src/assets/images/highway.png"
+              src={highwayLogo}
               alt="Highway Icon"
               className="w-[50px]"
             />

@@ -1,5 +1,7 @@
 import Accordion from "./Amenities";
 import useReveal from "./useReveal";
+import mobileMap from '../src/assets/images/mobile-map.png';
+import desktopMap from '../src/assets/images/desktop-map.png';
 
 function Location() {
   const [refTitle1, visTitle1] = useReveal();
@@ -35,7 +37,7 @@ const [refDesktopMap, visDesktopMap] = useReveal();
 
       {/* Mobile Map */}
       <img
-        src="./src/assets/images/mobile-map.png"
+        src={mobileMap}
         alt="Location Map Mobile"
         ref={refMobileMap}
         className={`
@@ -46,7 +48,7 @@ const [refDesktopMap, visDesktopMap] = useReveal();
 
       {/* Desktop Map */}
       <img
-        src="./src/assets/images/desktop-map.png"
+        src={desktopMap}
         alt="Desktop Map"
         ref={refDesktopMap}
         className={`

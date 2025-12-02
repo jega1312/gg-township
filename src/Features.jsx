@@ -1,4 +1,8 @@
 import useReveal from './useReveal';
+import petIcon from '../src/assets/images/feature/feature1.png';
+import residenceIcon from '../src/assets/images/feature/feature2.png';
+import schoolBadgeIcon from '../src/assets/images/feature/feature3.png';
+import hubIcon from '../src/assets/images/feature/feature4.png';
 
 function Features() {
   const [sectionRef, visible] = useReveal();
@@ -25,7 +29,7 @@ function Features() {
               className={`flex flex-col items-center justify-center rounded-2xl bg-[#ffffff0d] px-5 py-7 2xl:px-10 ${visible ? 'animate__animated animate__fadeInUp animate__slow animate__delay-0-2s custom-fade-up' : 'opacity-0'} `}
             >
               <img
-                src="./src/assets/images/feature/feature1.png"
+                src={petIcon}
                 className="w-[60px]"
               />
               <div className="sofia-pro mt-7 text-center text-[16px] text-white xl:text-[20px]">
@@ -38,7 +42,7 @@ function Features() {
               className={`flex flex-col items-center justify-center rounded-2xl bg-[#ffffff0d] px-5 py-7 2xl:px-10 ${visible ? 'animate__animated animate__fadeInUp animate__slow animate__delay-0-4s custom-fade-up' : 'opacity-0'} `}
             >
               <img
-                src="./src/assets/images/feature/feature2.png"
+                src={residenceIcon}
                 className="w-20"
               />
               <div className="sofia-pro mt-7 text-center text-[16px] text-white xl:text-[20px]">
@@ -51,7 +55,7 @@ function Features() {
               className={`flex flex-col items-center justify-center rounded-2xl bg-[#ffffff0d] px-5 py-7 2xl:px-10 ${visible ? 'animate__animated animate__fadeInUp animate__slow animate__delay-0-6s custom-fade-up' : 'opacity-0'} `}
             >
               <img
-                src="./src/assets/images/feature/feature5.png"
+                src={schoolBadgeIcon}
                 className="w-[100px]"
               />
               <div className="sofia-pro mt-7 text-center text-[16px] text-white xl:text-[20px]">
@@ -64,7 +68,7 @@ function Features() {
               className={`flex flex-col items-center justify-center rounded-2xl bg-[#ffffff0d] px-5 py-7 2xl:px-10 ${visible ? 'animate__animated animate__fadeInUp animate__slow animate__delay-0-8s custom-fade-up' : 'opacity-0'} `}
             >
               <img
-                src="./src/assets/images/feature/feature4.png"
+                src={hubIcon}
                 className="w-[70px]"
               />
               <div className="sofia-pro mt-7 text-center text-[16px] text-white xl:text-[20px]">
