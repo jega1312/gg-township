@@ -6,7 +6,7 @@ function Features() {
     <>
       <section
         id="features"
-        className="relative mx-auto h-full w-full rounded-t-2xl bg-[url('../assets/images/bg-green.png')] bg-cover bg-top bg-no-repeat sm:bg-[url('../assets/images/bg-green-desktop.png')]"
+        className="relative mx-auto h-full w-full rounded-t-2xl bg-[url('../images/bg-green.png')] bg-cover bg-top bg-no-repeat sm:bg-[url('../images/bg-green-desktop.png')]"
       >
         {/* CONTENT */}
         <div className="flex w-full flex-col items-center justify-center px-3.5 py-12 md:py-20 xl:py-24 3xl:py-28">
