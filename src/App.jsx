@@ -7,8 +7,8 @@ import Gallery from './Gallery';
 import Register from './Register';
 import Location from './Location';
 import Footer from './Footer';
-import './assets/css/App.css';
-import './assets/css/international-telephone-input.css';
+import '../assets/css/App.css';
+import '../assets/css/international-telephone-input.css';
 // import { useEffect, useState } from 'react';
 
 function App() {

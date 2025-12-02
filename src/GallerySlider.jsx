@@ -11,15 +11,15 @@ import arrowRight from '../src/assets/images/gallery/right.png';
 const galleryItems = [
   {
     id: 1,
-    srcMobile: './src/assets/images/gallery/gallery1.png',
-    srcDesktop: './src/assets/images/gallery/gallery1-desktop.png',
+    srcMobile: '../src/assets/images/gallery/gallery1.png',
+    srcDesktop: '../src/assets/images/gallery/gallery1-desktop.png',
     title: 'Lakeside Living',
     description: <>Immerse yourself in homes surrounded by Parks and Lakes</>,
   },
   {
     id: 2,
-    srcMobile: './src/assets/images/gallery/gallery2.png',
-    srcDesktop: './src/assets/images/gallery/gallery2-desktop.png',
+    srcMobile: '../src/assets/images/gallery/gallery2.png',
+    srcDesktop: '../src/assets/images/gallery/gallery2-desktop.png',
     title: '100ft Communal Garden',
     description: (
       <>Create new memories with loved ones in our car-free communal garden</>
@@ -27,15 +27,15 @@ const galleryItems = [
   },
   {
     id: 3,
-    srcMobile: './src/assets/images/gallery/gallery3.png',
-    srcDesktop: './src/assets/images/gallery/gallery3-desktop.png',
+    srcMobile: '../src/assets/images/gallery/gallery3.png',
+    srcDesktop: '../src/assets/images/gallery/gallery3-desktop.png',
     title: 'Thematic Landscapes',
     description: <>Live within the beauty of nature, everyday</>,
   },
   {
     id: 4,
-    srcMobile: './src/assets/images/gallery/gallery4.png',
-    srcDesktop: './src/assets/images/gallery/gallery4-desktop.png',
+    srcMobile: '../src/assets/images/gallery/gallery4.png',
+    srcDesktop: '../src/assets/images/gallery/gallery4-desktop.png',
     title: 'Commercial lots at FunPark',
     description: (
       <>Refresh yourself with a cold beverage after a long day at the FunPark</>
@@ -43,15 +43,15 @@ const galleryItems = [
   },
   {
     id: 5,
-    srcMobile: './src/assets/images/gallery/gallery5.png',
-    srcDesktop: './src/assets/images/gallery/gallery5-desktop.png',
+    srcMobile: '../src/assets/images/gallery/gallery5.png',
+    srcDesktop: '../src/assets/images/gallery/gallery5-desktop.png',
     title: 'Cascading Waterfall',
     description: <>Sustainable, thriving & biodiverse township</>,
   },
   {
     id: 6,
-    srcMobile: './src/assets/images/gallery/gallery6.png',
-    srcDesktop: './src/assets/images/gallery/gallery6-desktop.png',
+    srcMobile: '../src/assets/images/gallery/gallery6.png',
+    srcDesktop: '../src/assets/images/gallery/gallery6-desktop.png',
     title: 'Dining Restaurants',
     description: <>Be spoilt with various choices for lunch and dinner</>,
   },
