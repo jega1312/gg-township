@@ -23,15 +23,15 @@ import arrowRight from '../src/assets/images/gallery/right.png';
 const galleryItems = [
   {
     id: 1,
-    srcMobile: {gallery1Mobile},
-    srcDesktop: {gallery1Desktop},
+    srcMobile: gallery1Mobile,
+    srcDesktop: gallery1Desktop,
     title: 'Lakeside Living',
     description: <>Immerse yourself in homes surrounded by Parks and Lakes</>,
   },
   {
     id: 2,
-    srcMobile: {gallery2Mobile},
-    srcDesktop: {gallery2Desktop},
+    srcMobile: gallery2Mobile,
+    srcDesktop: gallery2Desktop,
     title: '100ft Communal Garden',
     description: (
       <>Create new memories with loved ones in our car-free communal garden</>
@@ -39,15 +39,15 @@ const galleryItems = [
   },
   {
     id: 3,
-   srcMobile: {gallery3Mobile},
-    srcDesktop: {gallery3Desktop},
+   srcMobile: gallery3Mobile,
+    srcDesktop: gallery3Desktop,
     title: 'Thematic Landscapes',
     description: <>Live within the beauty of nature, everyday</>,
   },
   {
     id: 4,
-    srcMobile: {gallery4Mobile},
-    srcDesktop: {gallery4Desktop},
+    srcMobile: gallery4Mobile,
+    srcDesktop: gallery4Desktop,
     title: 'Commercial lots at FunPark',
     description: (
       <>Refresh yourself with a cold beverage after a long day at the FunPark</>
@@ -55,15 +55,15 @@ const galleryItems = [
   },
   {
     id: 5,
-    srcMobile: {gallery5Mobile},
-    srcDesktop: {gallery5Desktop},
+    srcMobile: gallery5Mobile,
+    srcDesktop: gallery5Desktop,
     title: 'Cascading Waterfall',
     description: <>Sustainable, thriving & biodiverse township</>,
   },
   {
     id: 6,
-    srcMobile: {gallery6Mobile},
-    srcDesktop: {gallery6Desktop},
+    srcMobile: gallery6Mobile,
+    srcDesktop: gallery6Desktop,
     title: 'Dining Restaurants',
     description: <>Be spoilt with various choices for lunch and dinner</>,
   },
