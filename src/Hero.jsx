@@ -4,7 +4,7 @@ function Hero() {
   const [sectionRef, visible] = useReveal();
   return (
     <>
-      <section id='hero' className="h-screen bg-[url('/images/hero-mobile.png')] bg-cover bg-center bg-no-repeat sm:rounded-b-2xl sm:bg-[url('/images/hero-desktop.png')]">
+      <section id='hero' className="h-screen bg-[url('../src/assets/images/hero-mobile.png')] bg-cover bg-center bg-no-repeat sm:rounded-b-2xl sm:bg-[url('../src/assets/images/hero-desktop.png')]">
         {/* Hero Text */}
         <div className="absolute top-[17%] mx-auto flex w-full flex-col items-center justify-center md:top-[17%] lg:top-[18%] xl:top-[15%] 2xl:top-[19%] 3xl:top-[28%]">
           <div
@@ -24,7 +24,7 @@ function Hero() {
             className={`mx-auto flex w-[30%] items-center justify-center md:w-[31%] lg:w-[32%] xl:w-[16%] 2xl:w-[16%] ${visible ? 'animate__animated animate__fadeInUp animate__delay-1s animate__slow custom-fade-up' : 'opacity-0'} `}
           >
             <img
-              src="/assets/images/hero-line.png"
+              src="./src/assets/images/hero-line.png"
               alt="Hero Line"
               className="h-auto w-full object-contain"
             />
@@ -34,7 +34,7 @@ function Hero() {
             className={`mx-auto mt-4 flex items-center justify-center gap-x-1.5 md:mt-4 ${visible ? 'animate__animated animate__fadeInUp animate__delay-1s animate__slow custom-fade-up' : 'opacity-0'} `}
           >
             <img
-              src="/assets/images/highway.png"
+              src="./src/assets/images/highway.png"
               alt="Highway Icon"
               className="w-[50px]"
             />
