@@ -134,7 +134,7 @@ const products = [
   },
 ];
 
-function Products() {
+function Products( { setSelectedProject }) {
   const [showMore, setShowMore] = useState(false);
   const visibleHomes = showMore ? products : products.slice(0, 3);
   const [sectionRef, visible] = useReveal();
@@ -199,7 +199,7 @@ function Products() {
                     key={index}
                     className={showMore && index >= 3 ? 'fade-in' : ''}
                   >
-                    <ProductCard {...item} />
+                    <ProductCard {...item} onSelect={() => setSelectedProject(item.title)}/>
                   </div>
                 ))}
               </div>
@@ -245,6 +245,7 @@ function Products() {
                   price={<>TBC</>}
                   monthly={<>TBC</>}
                   buttonText="Register Now"
+                  onSelect={() => setSelectedProject("Atrium")}
                 />
 
                 <ProductCard
@@ -265,6 +266,7 @@ function Products() {
                   }
                   monthly={<>RM 7,XXX</>}
                   buttonText="Register Now"
+                  onSelect={() => setSelectedProject("Village Square")}
                 />
 
                 <ProductCard
@@ -285,6 +287,7 @@ function Products() {
                   }
                   monthly={<>RM 2,XXX</>}
                   buttonText="Register Now"
+                  onSelect={() => setSelectedProject("Gardens Square")}
                 />
               </div>
 

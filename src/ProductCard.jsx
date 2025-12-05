@@ -43,6 +43,7 @@ function ProductCard(props) {
       <div className="p-3 3xl:p-3.5">
         <a
           href="#register"
+          onClick={() => props.onSelect()}
           className="hk-nova 3xl:w-[58%] mx-auto flex w-[65%] items-center justify-center rounded-full border bg-[#42B58B] px-5 py-3 text-center text-[14px] text-white uppercase transition duration-300 ease-in-out border-[#42B58B] hover:bg-white hover:text-[#42B58B] sm:w-[65%] md:w-[55%] lg:w-[60%] xl:w-[60%] xl:text-[18px]"
         >
           {props.buttonText}

@@ -275,13 +275,14 @@ html {
   transition: all 0.25s ease;
 }
 
-/* checkmark + animation */
+/* animate when CHECKED */
 .custom-checkbox:checked {
   border-color: #6b9075;
   background-color: white;
-  animation: morph 0.25s ease-out;
+  animation: morph-in 0.25s ease-out;
 }
 
+/* checkmark icon when CHECKED */
 .custom-checkbox:checked::after {
   content: '';
   position: absolute;
@@ -294,8 +295,13 @@ html {
   background-size: 70%;
 }
 
-/* morph animation */
-@keyframes morph {
+/* animate when UNCHECKED */
+.custom-checkbox:not(:checked) {
+  animation: morph-out 0.25s ease-out;
+}
+
+/* morph in (on check) */
+@keyframes morph-in {
   0% {
     transform: scale(1);
     border-radius: 6px;
@@ -309,6 +315,23 @@ html {
     border-radius: 6px;
   }
 }
+
+/* morph out (on uncheck) */
+@keyframes morph-out {
+ 0% {
+    transform: scale(1);
+    border-radius: 6px;
+  }
+  40% {
+    transform: scale(0.85);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 6px;
+  }
+}
+
 
 .custom-fade-up {
   animation-name: customFadeInUp !important;

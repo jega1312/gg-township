@@ -1,7 +1,7 @@
 import useReveal from './useReveal';
 import { useEffect, useRef } from 'react';
 
-function Register() {
+function Register({selectedProject}) {
   const [sectionRef, visible] = useReveal();
   const phoneRef = useRef(null);
   const labelRef = useRef(null);
@@ -150,14 +150,15 @@ function Register() {
                     id="project"
                     name="project"
                     required
-                    defaultValue=""
+                    value={selectedProject || ""}
+        onChange={(e) => console.log("User changed", e.target.value)}
                     className="hk-nova h-[60px] w-full rounded-lg border-2 border-solid border-[#00000066] bg-transparent p-3 text-[14px] text-black focus:border-[#6B9075] active:focus:border-[#6B9075] sm:text-base"
                   >
                     <option value="" disabled>
                       Preferred Project*
                     </option>
                     <option value="Astor">Astor @ Gardens Park</option>
-                    <option value="Valeria">Valeria Garden Homes</option>
+                    <option value="Valeria Garden Homes">Valeria Garden Homes</option>
                     <option value="The Clove">The Clove</option>
                     <option value="Monarc">Monarc</option>
                     <option value="Heston Hills">Heston Hills</option>
@@ -174,7 +175,7 @@ function Register() {
                     name="checkbox"
                     id="checkbox"
                     className="custom-checkbox h-5 w-5 shrink-0"
-                    checked
+                    defaultChecked
                   />
                   <div className="hk-nova text-[14px] text-black">
                     I have read and agreed to the{' '}

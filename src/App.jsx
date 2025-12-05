@@ -10,9 +10,11 @@ import Footer from './Footer';
 import whatsappIcon from '../src/assets/images/whatsapp.svg';
 import './assets/css/App.css';
 import './assets/css/international-telephone-input.css';
-// import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 
 function App() {
+  const [selectedProject, setSelectedProject] = useState("");
+
   // const [isOverlayActive, setIsOverlayActive] = useState(false);
 
   // useEffect(() => {
@@ -62,9 +64,9 @@ function App() {
         <Hero />
         <Connectivity />
         <Features />
-        <Products />
+        <Products setSelectedProject={setSelectedProject}/>
         <Gallery />
-        <Register />
+        <Register selectedProject={selectedProject} />
         <Location />
         <Footer />
       </div>
